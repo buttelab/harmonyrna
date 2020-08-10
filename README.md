@@ -1,2 +1,2 @@
 # harmonyrna
-A web server for harmonizing RNA-Seq data
+A web tool for batch affect  adjustment of RNA-Seq count and TPM data
