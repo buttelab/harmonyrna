@@ -23,7 +23,7 @@ If you are interested in the example datasets used in the HarmonyRNA tutorial an
 
 ## Source Code Summary
 
-Here we provide a summary of all the source code. The repository consists of an `app.R` file and 4 folders consitsting of R code and/or csv files. 
+We provide a summary of all the source code. This repository consists of an `app.R` file and four folders consitsting of R code and csv files. 
 
 * [app.R](https://github.com/buttelab/harmonyrna/blob/master/app.R) This one file contains all of the code used to build the HarmonyRNA website. It is by far the most important file in the repository and where you should start reading. `app.R` launches an R shiny server. If you are unfamiliar with R shiny, you should do [tutorials](https://shiny.rstudio.com/tutorial/) on the R shiny website before continuing. The `app.R` file's code is broken up into two major sections the UI and Server. The UI creates all of front the end elements of the website. The server section manages the backend code and manipulates the website interface in real-time.
 
