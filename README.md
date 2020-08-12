@@ -21,6 +21,18 @@ HarmonyRNA source code is available on Github and Dockerhub. The README files on
 
 If you are interested in the example datasets used in the HarmonyRNA tutorial and would like to learn more about them, you should start by reading through the `other_code` folder on Github. The datasets were originally created as part of the 10k Immunomes project so you may need to eventually read the 10k Immunomes documentation. 
 
+## Source Code Summary
+
+Here we provide a summary of all the source code. The repository consists of an `app.R` file and 4 folders consitsting of R code and/or csv files. 
+
+* **app.R** This one file contains all of the code used to build the HarmonyRNA website. It is by far the most important file in the repository and where you should start reading. app.R launches and R shiny server. If you are unfamiliar with R shiny, you should do [tutorials]((https://shiny.rstudio.com/tutorial/)) on the R shiny website before continuing. The `app.R` file's code is broken up into two major sections the UI and Server sections. The user interface creates all of front end elements of the website. The server sections manages the backend code and manipulates the website realtime.
+
+* **www** This folder contains the images, datasets, and ComBat-Seq R files that are used by the R Shiny website. The datasets in `www` is the example dataset for the video tutorial. The R files are the original files from the [Combat-Seq github](https://github.com/zhangyuqing/ComBat-seq) repo. I believe the only R file that is actually used in the website is `helper.R` which are helper functions for the ComBat-Seq function. The ComBat-Seq function was rewritten in the `app.R` file to accomadate R shiny features.
+
+* **other_code** This folder contains all other R code that is not used by the HarmonyRNA website. This code was used to build the example dataset for the video tutorial as well as to test the validity of the HarmonyRNA TPM harmonization algorithm. This code was originally run in the same lcoation as the `app.R` file. If tou intend to run this code you should first move it back to that location. The `make_tpm_files` and `make_unharmonized_tpm` use/create the data from the `tpm_data` and `test_data` folders.
+
+* **test_data** This is the raw counts/TPM data that is processed by the code int `other_code` to create the example dataset for hte video tutorial. These raw counts/TPM files are themselves processed files from raw data collected from [immport](immport.org).
+
 ## Help and Contact
 
 If you are another lab interested in HarmonyRNA, we are happy to have you reach out to [Atul Butte's lab](https://buttelab.ucsf.edu/). Sanchita Bhattacharya is the senior scientist and manager of this project (email: Sanchita.Bhattacharya@ucsf.edu). If you are a programmer with technical questions please reach out to the senior programmer of HarmonyRNA, Matthew Elliott (email: melliot1@ucsc.edu). We look forward to hearing from you!
